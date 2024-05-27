@@ -66,3 +66,20 @@ h1{
 #sidebar a:visited{
     color: darkorange;
 }
+
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(92, 92, 92, 0.2)
+}
+
+#form-section{
+    background-color: white;
+}
+
+#submit-section{
+    margin-bottom:30%;
+}
+
