@@ -1,0 +1,7 @@
+#sidebar{
+    background-image: url("/media/gaming.jpg");
+}
+
+#container{
+    display: flex;
+}
