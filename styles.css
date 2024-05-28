@@ -1,6 +1,7 @@
 *{
     font-family: "Exo-Light";
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    color:white;
 }
 
 body{
@@ -50,10 +51,6 @@ h1{
     font-size: 50px;
 }
 
-#main-content{
-    flex:2 60%;
-}
-
 #header{
     display: flex;
     align-items: center;
@@ -81,20 +78,28 @@ h1{
 
 #main-content{
     display: flex;
+    flex:2 60%;
+    min-width:80vh;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(92, 92, 92, 0.2);
+    background-color: rgba(92, 92, 92, 0.8);
 }
 
 #main-text{
-    margin-top:10%;
+    margin-top:5%;
     font-size:1.2rem;
     max-width:50ch;
-    
 }
 
 #form-section{
     background-color: white;
+    padding-bottom: 20px !important;
+}
+
+#form-section label,
+#form-section p{
+    color:black;
+    font-weight: bold;
 }
 
 #submit-section{
