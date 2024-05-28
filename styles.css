@@ -1,9 +1,15 @@
+*{
+    font-family: "Exo-Light";
+    letter-spacing: 1px;
+}
+
 body{
     margin:0;
 }
 
 #container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 ::placeholder{
@@ -11,10 +17,10 @@ body{
 }
 
 #sidebar{
-    display: flex;
+    display:flex;
+    flex:1 30%;
     flex-direction: column;
     justify-content: space-between;
-    min-width:35%;
     height: 100vh;
     background-image: radial-gradient(at 50% 30%, rgba(0,0,0,0),rgba(0,0,0,0.5) 70%,rgba(0,0,0,1) 90%),url("/media/gaming.jpg");
     background-position: center;
@@ -33,14 +39,19 @@ body{
     src: url("/media/Exo-Black.otf");
 }
 
+@font-face {
+    font-family: "Exo-Light";
+    src: url("/media/Exo-Light.otf");
+}
+
 h1{
     color:floralwhite;
     font-family: "Exo", sans-serif;
+    font-size: 50px;
 }
 
 #main-content{
-    display: flex;
-
+    flex:2 60%;
 }
 
 #header{
@@ -57,6 +68,7 @@ h1{
 
 #sidebar p{
     color:white;
+    font-size:small;
 }
 
 #sidebar a:link{
@@ -67,12 +79,18 @@ h1{
     color: darkorange;
 }
 
-
 #main-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(92, 92, 92, 0.2)
+    background-color: rgba(92, 92, 92, 0.2);
+}
+
+#main-text{
+    margin-top:10%;
+    font-size:1.2rem;
+    max-width:50ch;
+    
 }
 
 #form-section{
@@ -80,6 +98,13 @@ h1{
 }
 
 #submit-section{
-    margin-bottom:30%;
+    margin-bottom:10%;
 }
 
+#main-text,
+#form-section,
+#submit-section,
+#footer{
+    box-sizing: border-box;
+    padding:20px 20px 0 20px;
+}
