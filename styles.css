@@ -68,11 +68,13 @@ h1{
     font-size:small;
 }
 
-#sidebar a:link{
+#sidebar a:link, 
+#footer a:link{
     color: orange;
 }
 
-#sidebar a:visited{
+#sidebar a:visited,
+#footer a:visited{
     color: darkorange;
 }
 
@@ -87,19 +89,58 @@ h1{
 
 #main-text{
     margin-top:5%;
-    font-size:1.2rem;
+    font-size:1.1rem;
     max-width:50ch;
 }
 
 #form-section{
     background-color: white;
     padding-bottom: 20px !important;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-#form-section label,
+form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#first-column,
+#second-column
+{
+    display:flex;
+    flex: 0 0 48%;
+    flex-direction: column;
+
+}
+
+input{
+    margin-bottom:10px;
+    color:black;
+}
+
+label{
+    color:black;
+}
+
+input[type="submit"]{
+    background-color:rgb(74, 16, 159);
+    color:white;
+    padding: 10px;
+    margin-top:10px;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(191, 43, 131);
+}
+
 #form-section p{
     color:black;
     font-weight: bold;
+    font-size: larger;
 }
 
 #submit-section{
@@ -111,5 +152,5 @@ h1{
 #submit-section,
 #footer{
     box-sizing: border-box;
-    padding:20px 20px 0 20px;
+    padding:10px 10px 0 50px;
 }
